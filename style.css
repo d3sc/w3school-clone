@@ -14,7 +14,7 @@ header {
   color: black;
   background-color: white;
   align-items: center;
-  height: 80px;
+  height: 60px;
   position: fixed;
   width: 100%;
 }
@@ -41,7 +41,7 @@ header nav ul li a {
   color: inherit;
 }
 
-header nav ul li button {
+header nav ul li input {
   background-color: transparent;
   /* border: none; */
   border: 1px solid grey;
@@ -51,6 +51,7 @@ header nav ul li button {
   border-radius: 360px;
   text-align: left;
   cursor: text;
+  padding-left: 10px;
 }
 
 header .login button.signup {
@@ -83,7 +84,7 @@ header .login button.login:hover {
   transition: ease-in-out 0.3s;
 }
 
-header nav ul li:hover {
+header nav ul li:not(:last-child):hover {
   display: flex;
   background-color: green;
   height: 80px;
